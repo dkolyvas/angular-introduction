@@ -1,4 +1,4 @@
-<div *ngIf="person"; else nodata >
+<div *ngIf="person else nodata" >
     <table>
     <tr>
       <td class ="header">First Name</td>
@@ -19,5 +19,5 @@
     
   </table></div>
   <ng-template #nodata>
-
+        Person is undefined
   </ng-template>
