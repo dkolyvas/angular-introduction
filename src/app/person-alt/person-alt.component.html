@@ -1,4 +1,5 @@
-<table>
+<div *ngIf="person"; else nodata >
+    <table>
     <tr>
       <td class ="header">First Name</td>
       <td>{{person.givenName}}</td>
@@ -16,4 +17,7 @@
       <td>{{person.email}}</td>
      </tr> 
     
-  </table>
+  </table></div>
+  <ng-template #nodata>
+
+  </ng-template>
