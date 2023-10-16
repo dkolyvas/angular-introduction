@@ -9,3 +9,6 @@
 <app-output-demo [userData]="users" (deleteUser)="onDeleteUser($event)"
 (sendUser)="onSendUser($event)"></app-output-demo>
 <app-person-card [person]="sentUser"></app-person-card>
+<div class="container">
+    <app-template-driven-form (newPerson) = "onNewPerson($event)"></app-template-driven-form>
+</div>
