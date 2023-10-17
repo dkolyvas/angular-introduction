@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Person } from '../intefaces/person';
 
 @Component({
   selector: 'app-reactive-form',
@@ -21,4 +22,9 @@ export class ReactiveFormComponent {
     email: new FormControl("", [Validators.required, Validators.email]),
     address: new FormControl('', Validators.required)
   })
+  @Output() newPerson = new EventEmitter<Person>()
+
+  onSubmit(){
+    this.newPerson.emit(this.form.value as Person)
+  }
 }
