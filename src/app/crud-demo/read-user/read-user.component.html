@@ -1,0 +1,11 @@
+<div class="form-group">
+    <label for="form-label">
+        Search for User Id
+    </label>
+    <input type="number" class="form-control"
+    #userId>
+    <div *ngIf="userNotFound"> "User wasn't found" </div>
+    <button (click)="onClick()" class="btn btn-primary mt-2"> Search</button>
+
+</div>
+<app-person-card *ngIf="foundUser" [person]="foundUser"></app-person-card>

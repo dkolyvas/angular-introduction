@@ -10,15 +10,6 @@
       "photoURL": "https://i.pravatar.cc/?img=1"
     },
     {
-      "id": 2,
-      "givenName": "Jane",
-      "surName": "Doe",
-      "age": 28,
-      "email": "jane.doe@example.com",
-      "address": "123 Main St",
-      "photoURL": "https://i.pravatar.cc/?img=2"
-    },
-    {
       "id": 3,
       "givenName": "Jim",
       "surName": "Brown",
@@ -80,15 +71,6 @@
       "email": "jerry.davis@example.com",
       "address": "654 Pine St",
       "photoURL": "https://i.pravatar.cc/?img=9"
-    },
-    {
-      "id": 10,
-      "givenName": "June",
-      "surName": "Davis",
-      "age": 53,
-      "email": "june.davis@example.com",
-      "address": "654 Pine St",
-      "photoURL": "https://i.pravatar.cc/?img=10"
     },
     {
       "givenName": "Christodoulos",

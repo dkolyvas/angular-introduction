@@ -6,9 +6,12 @@
 <app-person [person]="me"></app-person>
 <app-person-alt *ngFor = "let user of users" [person]="user"></app-person-alt>
 <app-event-bind></app-event-bind>-->
-<app-output-demo [userData]="users" (deleteUser)="onDeleteUser($event)"
+<!-- <app-output-demo [userData]="users" (deleteUser)="onDeleteUser($event)"
 (sendUser)="onSendUser($event)"></app-output-demo>
 <app-person-card [person]="sentUser"></app-person-card>
 <div class="container">
     <app-reactive-form (newPerson) = "onNewPerson($event)"></app-reactive-form>
-</div>
+</div> -->
+<app-crud-demo>
+    
+</app-crud-demo>
