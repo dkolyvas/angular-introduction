@@ -26,5 +26,9 @@ export class AppService {
     return this.http.get<Person>(`http://localhost:3000/users/${id}`)
   }
 
+  updateUser(user: Person){
+    return this.http.put<Person>(`http://localhost:3000/users${user.id}`, user)
+  }
+
 
 }

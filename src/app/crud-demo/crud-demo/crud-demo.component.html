@@ -24,7 +24,7 @@
 </ng-container>
 <ng-container *ngIf="crudOperation" [ngSwitch]= "crudOperation">
     <ng-container *ngSwitchCase="'update'">
-        <app-update-user></app-update-user>
+        <app-update-user (userUpdated)="onSelection('list')"></app-update-user>
     </ng-container> 
 </ng-container>
 <ng-container *ngIf="crudOperation" [ngSwitch]= "crudOperation">
